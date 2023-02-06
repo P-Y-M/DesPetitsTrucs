@@ -2,10 +2,11 @@
 
 int hauteur = 0, espace = 1;
 
-Console.WriteLine("De quelle hauteur voulez-vous votre sapin ?");
+Console.Write("De quelle hauteur voulez-vous votre sapin ? : ");
 int.TryParse(Console.ReadLine(), out hauteur);
 
 Console.Clear();
+Console.WriteLine();
 
 if (hauteur != 1) espace = ((hauteur * 2) - 1) / 2 ;
 
@@ -44,4 +45,4 @@ for (int i = 0; i < 3; i++) //le tronc
     Console.WriteLine();
 }
 
-Console.WriteLine("\nJoyeux Noël en retard !!!");
+Console.WriteLine(Environment.NewLine + " Joyeux Noël en retard !!!");
